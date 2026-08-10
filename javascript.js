@@ -84,3 +84,9 @@ return str.at(-1);
 }
 
 console.log(lastLetter("javascript"));
+
+let answer = parseInt(prompt("Please enter a number you would like to FizzBuzz to: "))
+
+for (let i = 1; i <= answer; i++){
+  console.log(i);
+}
