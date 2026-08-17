@@ -123,8 +123,23 @@ function isOdd(num){
   return num % 2 !== 0;
 }
 
+
+
 const arr = [1,2,3,4,5];
+
+//going through the array and putting it into the isOdd function which only returns odd numbers
 const filterArr = arr.filter(isOdd);
 
 console.log(filterArr);
 console.log(arr);
+
+
+const productOfAllNums = arr.reduce((total, currentItem) => {
+  return total * currentItem;
+}, 1);
+
+
+// the reduce function takes a callback function which is the first one as its parameters and 
+// and the 1 as initial value. so its (callbackFunction, initialValue)
+console.log(productOfAllNums); // Outputs 120;
+console.log(arr); // Outputs [1, 2, 3, 4, 5]
