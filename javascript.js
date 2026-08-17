@@ -101,3 +101,16 @@ for (let i = 1; i <= answer; i++){
       console.log(i);
     }
 }
+
+const generateUserGreeting = function (name) {
+  const greeting = "Hello ";
+  return greeting + name;
+};
+
+generateUserGreeting("John");
+
+
+
+const array = [1,2,3,4,5];
+const mappedArray = array.map((num) => num + 1);
+console.log(mappedArray);
