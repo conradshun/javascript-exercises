@@ -112,5 +112,19 @@ generateUserGreeting("John");
 
 
 const array = [1,2,3,4,5];
+// declaring an array
+
 const mappedArray = array.map((num) => num + 1);
+// mapping the array with the map function returns the array + 1 (does not change value)
+
 console.log(mappedArray);
+
+function isOdd(num){
+  return num % 2 !== 0;
+}
+
+const arr = [1,2,3,4,5];
+const filterArr = arr.filter(isOdd);
+
+console.log(filterArr);
+console.log(arr);
